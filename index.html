@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhinash • Portfolio</title>
+  <meta name="description" content="Abhinash – Developer Portfolio showcasing skills, projects, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===== Header / Navbar ===== -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="logo">A</span> Abhinash
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn" href="https://github.com/" target="_blank" rel="noopener"><!-- GitHub icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 3.5 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 3.5 5.44 5.44 0 0 0 3.5 7c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 17.13V22"/></svg>
+          <span>GitHub</span>
+        </a>
+        <button class="btn menu-btn" id="menuBtn" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawer (mobile) -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <header class="container nav">
+      <div class="brand"><span class="logo">A</span> Menu</div>
+      <button class="btn" id="drawerClose" aria-label="Close menu">Close</button>
+    </header>
+    <nav class="container" aria-label="Mobile">
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- ===== Hero (animated background) ===== -->
+  <section id="home" class="section hero">
+    <div class="bg-blob blob-1" aria-hidden="true"></div>
+    <div class="bg-blob blob-2" aria-hidden="true"></div>
+
+    <div class="container wrap">
+      <div id="hero-anim-container">
+        I am <span class="heroname">Abhinash</span>
+        <div id="flip">
+          <div> <!-- This is the element that moves -->
+            <div class="flipper-item item-1">Developer</div>
+            <div class="flipper-item item-2">Grapic Designer</div>
+            <div class="flipper-item item-3">Ethical Hacker</div>
+          </div>
+        </div>
+        <p class="lead">I build interactive web apps and tools with a focus on security and performance.</p>
+      </div>
+
+      <div class="hero-portrait">
+        <div class="frame bg" aria-hidden="true"></div>
+        <div class="frame fore" aria-label="Portrait placeholder"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <div class="hr" aria-hidden="true"></div>
+      </div>
+
+      <div class="grid">
+        <div class="card about-card">
+          <p>Hey! I’m <b>Abhinash</b>, a developer who loves mixing strong engineering with aesthetic UI. I’ve been building interactive pages, tools and security‑minded apps. I enjoy JS/TS, Python, and deploying on Linux.</p>
+          <p>Outside of code, I write a fantasy series and explore cyber‑security. If you’re hiring or want to collaborate, I’d love to chat.</p>
+          <div class="projectc"> Projects</div>
+          <div class="kpis"> 
+            <div class="stat"><b>1</b> Beginner</div>
+            <div class="stat"><b>2</b> Intermedeate</div>
+            <div class="stat"><b>1</b> Advanced</div>
+          </div>
+        </div>
+        <div class="grid about-details-grid">
+          <div class="stat">⚡ Currently learning: Cybersecurity</div>
+          <div class="stat">🛠️ Favorite stack: RUST • CSS </div>
+          <div class="stat">🌏 Location: India (IST)</div>
+          <div class="stat">📄 <a class="btn" href="#" onclick="alert('Hook this to your real CV URL!')">Download CV</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <div class="hr" aria-hidden="true"></div>
+      </div>
+
+      <div class="grid">
+        <div class="skill card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M9 9h6v6H9z"/></svg>
+          <b>HTML5</b><small>Semantic + SEO</small>
+        </div>
+        <div class="skill card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M4 14c4-6 12-6 16 0"/></svg>
+          <b>CSS3</b><small>Glassmorphism, Flex/Grid</small>
+        </div>
+        <div class="skill card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M5 9l7 7 7-7"/></svg>
+          <b>JavaScript</b><small>ES6+, DOM, APIs</small>
+        </div>
+        
+        <div class="skill card">
+           <!-- Rust Logo (White SVG Outline) -->
+          <svg xmlns="http://www.w3.org/2000/svg"
+           width="28" height="28"
+           viewBox="0 0 24 24"
+           fill="none"
+          stroke="currentColor"
+           stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          style="color: white;">
+          <!-- Gear-style "R" outline similar to the Rust logo -->
+          <path d="M12 2 L12 22" /> <!-- optional shaft detail, for style -->
+          <path d="M6 6 L18 6 L18 18 L6 18 Z" /> <!-- simplified gear-ish square -->
+          <text x="12" y="16" text-anchor="middle" fill="currentColor" font-size="12" font-family="sans-serif">R</text>
+          </svg>
+          <b>Rust</b><small>Systems & Performance</small>
+        </div>
+
+
+         <div class="skill card">
+          <!-- Shield/Lock Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" 
+           width="28" height="28" viewBox="0 0 24 24" 
+           fill="none" stroke="currentColor" 
+           stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+           <path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6z"/>
+           <circle cx="12" cy="12" r="2"/>
+           </svg>
+           <b>Cybersecurity</b><small>Ethical Hacking & Defense</small>
+        </div>
+
+        <div class="skill card">
+           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/linux/linux-plain.svg"
+            width="28"
+            height="28"
+            alt="Linux"
+            class="linux-icon" />
+            <b>Linux</b><small> user for last 3 years  </small>
+         </div>
+<div class="skill card">
+  <img src="https://nmap.org/images/nmap-logo-256x256.png" 
+       width="28" height="28" alt="Nmap" 
+       class="icon-white"/>
+  <b>Nmap</b><small>Network Scanner</small>
+</div>
+
+<div class="skill card" aria-label="OSINT Engineering - Intermediate">
+  <!-- OSINT: Magnifier + Globe Icon (stroke, inherits color) -->
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="28" height="28" viewBox="0 0 24 24"
+       fill="none" stroke="currentColor"
+       stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- globe -->
+    <circle cx="10" cy="10" r="6"/>
+    <path d="M4 10h12" />
+    <path d="M10 4v12" />
+    <!-- magnifier handle -->
+    <line x1="15.5" y1="15.5" x2="21" y2="21" />
+    <circle cx="15.2" cy="15.2" r="1.4" />
+  </svg>
+
+  <b>OSINT Engineering</b>
+  <small>Intermediate • Footprinting, SMM, Tools</small>
+</div>
+
+        <div class="skill card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6 4 4 6-6"/></svg>
+          <b>Python</b><small>Automation & ML basics</small>
+        </div>
+        <div class="skill card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18"/><path d="M6 3h12v4H6z"/><path d="M6 7v14"/></svg>
+          <b>Security</b><small>OWASP basics</small>
+        </div>
+      </div>
+    </div>
+  
+    
+  </section>
+
+      
+
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-title">
+        <h2>Projects</h2>
+        <div class="hr" aria-hidden="true"></div>
+      </div>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="project card">
+          <a class="thumb" href="https://your-demo-link.com" target="_blank" rel="noopener">
+            <img alt="Project screenshot" src="src/SHOWCASE.png" />
+          </a>
+          <div class="meta">
+            <h3>Personal Portfolio</h3>
+            <p class="lead">The very portfolio you're looking at now, built to showcase my skills in action ,i used the glassmorphism to make more intercative. </p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn primary" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project card">
+          <a class="thumb" href="#" onclick="return false;">
+            <img alt="Project screenshot" src="src/screenshot.png" />
+          </a>
+          <div class="meta">
+            <h3>AURALAN </h3>
+            <p class="lead">Auralan is a high-performance, GTK4-powered desktop packet sniffer written in Rust. It provides real-time network traffic analysis in a modern, intuitive interface. Designed for both learning and light debugging, Auralan is private, local-first, and fast.</p>
+            <div class="tags">
+              <span class="tag">Rust</span><span class="tag">css</span><span class="tag">GTK4-powered</span>
+            </div>
+            <a class="btn primary" href="https://github.com/abhinash000/AuraLAN/tree/main" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project card">
+          <a class="thumb" href="#" onclick="return false;">
+            <img alt="Project screenshot" src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1200&auto=format&fit=crop" />
+          </a>
+          <div class="meta">
+            <h3>SecureNotes • Encrypted Notes</h3>
+            <p class="lead">Local‑first notes app with passphrase‑based encryption and offline support.</p>
+            <div class="tags">
+              <span class="tag">JS</span><span class="tag">Crypto</span><span class="tag">PWA</span>
+            </div>
+            <a class="btn primary" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <div class="hr" aria-hidden="true"></div>
+      </div>
+
+      <div class="grid">
+        <div class="card contact-card">
+          <form onsubmit="event.preventDefault(); alert('Hook this form to your backend or a service like Formspree.');">
+            <input class="input" type="text" name="name" placeholder="Your name" required />
+            <input class="input" type="email" name="email" placeholder="Email" required />
+            <textarea class="input" name="message" placeholder="Your message" required></textarea>
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="grid contact-details-grid">
+          <a class="stat" href="mailto:you@example.com">✉️ you@example.com</a>
+          <a class="stat" href="https://linkedin.com/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <a class="stat" href="https://github.com/" target="_blank" rel="noopener">💻 GitHub</a>
+          <div class="stat">📍 Based in India • Open to remote</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Abhinash • Built with ❤️ and glass.</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
