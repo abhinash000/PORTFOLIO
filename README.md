@@ -148,7 +148,3 @@ Licensed under the **MIT License** – free to use & modify.
 ```
 
 ---
-
-✅ Now your README starts with an **animated typing banner** that highlights your roles and interests.
-
-Do you also want me to design a **custom logo/banner image** (like a dark cyberpunk-style header with your name + tagline) that you can upload into your repo and display at the top above the typing effect?
